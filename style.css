@@ -1,0 +1,124 @@
+/* Link di riferimento:
+https://www.w3schools.com/cssref/css_selectors.ph  */
+
+/* voglio selezionare tutti gli elementi: margini, riempimenti, ecc.  */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Imposto una box-sizing: border-box
+  il riempimento e il bordo sono inclusi nella larghezza e nell'altezza */
+  font-family: 'Ubuntu', sans-serif /* font  */
+}
+
+/* contenitore importante */
+
+.main {
+  width: 100vw; /* larghezza finestra */
+  height: 100vh; /* altezza finestra */
+  background-image: url("./immagini/background.jpg"); /* immagine sfondo */
+   /* caratteristiche */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* contenitore trasparente */
+
+.container {
+  width: 65%;
+  margin: 0 auto;
+  background: rgb(0, 0, 0, 0.7) ;  /* trasparenza */
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+/* loghi  */
+
+.logo {
+  width: 20%;
+}
+
+.logo img {
+  width: 100%
+}
+
+/* titolo */
+
+h2 {
+  color: #00dd00;
+  font-weight: bold;
+}
+
+/* Tabella selezione */
+
+.selection {
+  width: 80%;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  background: #00dd00;
+}
+
+.selection button {
+  margin: 0 10px;
+  padding: 0 5px;
+}
+
+/* Statistiche */
+
+.statistics {
+  width: 80%;
+  color: white;
+}
+
+.charge1 {
+  height: 20px;
+  padding: 10px;
+  margin: 5px 0 20px 0;
+  border-radius: 5px;
+  width: 30%;
+  background: orange;
+}
+.charge2 {
+  height: 20px;
+  padding: 10px;
+  margin: 5px 0 20px 0;
+  border-radius: 5px;
+  width: 60%;
+  background: lime;
+}
+.charge3 {
+  height: 20px;
+  padding: 10px;
+  margin: 5px 0 20px 0;
+  border-radius: 5px;
+  width: 15%;
+  background: orangered;
+}
+
+.name {
+  display: flex;
+  align-items:  center;
+  margin-bottom: 5px;
+}
+
+.square {
+  height: 10px;
+  width: 10px;
+  background-color: #fff;
+}
+
+/* per dare lo spazio tra il quadratino e la scritta monopattino */
+
+.name span {
+  margin-right: 10px;
+}
